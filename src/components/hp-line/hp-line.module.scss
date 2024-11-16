@@ -1,0 +1,14 @@
+.hpLevel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #f0932b;
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 12px;
+
+  &Hp {
+    margin: 0;
+    font-weight: bold;
+  }
+}

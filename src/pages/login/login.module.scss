@@ -1,0 +1,23 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5d7a8c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Form {
+    background-color: #f5f6fa;
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &Title {
+      margin: 0;
+    }
+  }
+}

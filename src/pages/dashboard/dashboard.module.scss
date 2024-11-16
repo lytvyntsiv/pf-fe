@@ -1,0 +1,27 @@
+.dashboard {
+  background-image: url("../../assets/images/pockemon-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 40% 1fr;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  &FigthMode {
+    display: block;
+  }
+
+  &Pockemons {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

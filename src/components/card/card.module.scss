@@ -1,0 +1,90 @@
+.card {
+  overflow: hidden;
+
+  color: #333;
+  font-family: Arial, sans-serif;
+
+  border: 5px solid #ffed09;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #f6e58d;
+  cursor: pointer;
+
+  &Actions {
+    &:hover {
+      border-color: #ff0000;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    color: #131212;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f0932b;
+  }
+
+  &ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f6fa;
+  }
+
+  &Image {
+    width: 50%;
+    height: 50%;
+  }
+
+  &Content {
+    padding: 10px;
+
+    &Type {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 0;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+
+    &Stats {
+      padding: 10px;
+      background-color: #f0932b;
+      color: #000;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      & > p {
+        margin: 0;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &Description {
+      font-size: 14px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    &Abilities {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+}

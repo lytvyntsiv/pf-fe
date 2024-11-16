@@ -1,0 +1,26 @@
+.board {
+  height: 30vh;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 18px;
+
+  @media (max-width: 768px) {
+    height: 30vh;
+  }
+
+  &List {
+    height: 100%;
+    overflow: scroll;
+
+    font-family: cursive, sans-serif;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &Item {
+      margin: 0;
+      color: #f5f6fa;
+    }
+  }
+}
